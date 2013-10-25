@@ -1,0 +1,12 @@
+<rss version="2.0">
+  <channel>
+  	<title>Xiaxiaoyu's Blog</title>
+  	<link>http://xiaxiaoyu1988.github.io/blog/</link>
+  	<description>A simple static blog for Xiaxiaoyu</description>
+		<item>
+    	<title>Hello, World!</title>
+    	<pubDate>2013-10-10</pubDate>
+    	<link>http://xiaxiaoyu1988.github.io/blog/hello/</link>
+    </item>
+	</channel>
+</rss>
