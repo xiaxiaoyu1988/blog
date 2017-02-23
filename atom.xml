@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Xtimer</title>
+  <subtitle>Pain past is pleasure</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://xtimer.org/"/>
+  <updated>2017-02-23T09:05:04.317Z</updated>
+  <id>http://xtimer.org/</id>
+  
+  <author>
+    <name>Xiaxiaoyu</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Atom And Plugins</title>
+    <link href="http://xtimer.org/2017/02/22/Atom-and-plugins/"/>
+    <id>http://xtimer.org/2017/02/22/Atom-and-plugins/</id>
+    <published>2017-02-22T03:35:14.000Z</published>
+    <updated>2017-02-23T09:05:04.317Z</updated>
+    
+    <content type="html"><![CDATA[<!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
+<ul>
+<li><a href="#系统环境">系统环境</a></li>
+<li><a href="#atom安装">Atom安装</a></li>
+<li><a href="#插件2017-02-23更新">插件(2017-02-23更新)</a><ul>
+<li><a href="#tortoise-svn">tortoise-svn</a></li>
+<li><a href="#simplified-chinese-menu">simplified-chinese-menu</a></li>
+<li><a href="#svn">svn</a></li>
+<li><a href="#minimap">minimap</a></li>
+<li><a href="#markdown-preview-enhanced">markdown-preview-enhanced</a></li>
+<li><a href="#regex-railroad-diagram">regex-railroad-diagram</a></li>
+<li><a href="#remote-sync">remote-sync</a></li>
+<li><a href="#atom-hexo">atom-hexo</a></li>
+<li><a href="#file-icons">file-icons</a></li>
+<li><a href="#markdown-writer">markdown-writer</a></li>
+</ul>
+</li>
+</ul>
+<!-- tocstop -->
+<p>轻量IDE环境全面由Sublime Text2 转向Atom。<br>简单记录下Atom安装过程以及使用的插件。  </p>
+<h2 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境"></a>系统环境</h2><p>  Windows 7 x64</p>
+<h2 id="Atom安装"><a href="#Atom安装" class="headerlink" title="Atom安装"></a>Atom安装</h2><p><a href="https://atom.io" target="_blank" rel="external">Atom</a><br><img src="/images/2017/02/atom_install_1.png" alt="Atom"><br><a id="more"></a><br>选择<code>Other platforms</code><br><img src="/images/2017/02/atom_install_2.png" alt="Atom"><br>选择windows x64平台下的zip包<br>解压到任意目录，打开atom.exe 即可使用</p>
+<h2 id="插件-2017-02-23更新"><a href="#插件-2017-02-23更新" class="headerlink" title="插件(2017-02-23更新)"></a>插件(2017-02-23更新)</h2><h3 id="tortoise-svn"><a href="#tortoise-svn" class="headerlink" title="tortoise-svn"></a>tortoise-svn</h3><p>An Atom Plugin for users of TortoiseSvn for Windows<br><img src="/images/2017/02/atom_plugin_1.png" alt="tsvn"></p>
+<h3 id="simplified-chinese-menu"><a href="#simplified-chinese-menu" class="headerlink" title="simplified-chinese-menu"></a>simplified-chinese-menu</h3><p>Atom 的简体中文语言包，完整汉化，兼容所有已发布版本 Atom<br><img src="https://i.github-camo.com/310974644fa82b356fd6a84fac26e4629743bcc8/68747470733a2f2f6769746875622e636f6d2f6368696e616b6964732f61746f6d2d6368696e6573652d6d656e752f7261772f6d61737465722f73637265656e73686f742f73637265656e73686f74342e706e67" alt="simplified-chinese-menu"></p>
+<h3 id="svn"><a href="#svn" class="headerlink" title="svn"></a>svn</h3><p>Marks lines/files in the editor gutter/treeview that have been added, edited, or deleted since the last commit.</p>
+<h3 id="minimap"><a href="#minimap" class="headerlink" title="minimap"></a>minimap</h3><p>A preview of the full source code.<br><img src="https://i.github-camo.com/c26ef0defaf081ebd5ddfd730a1d914e9dfa3a3a/68747470733a2f2f6769746875622e636f6d2f61746f6d2d6d696e696d61702f6d696e696d61702f626c6f622f6d61737465722f7265736f75726365732f696e646570656e64656e742d7363726f6c6c2e6769663f7261773d74727565" alt="minimap"></p>
+<h3 id="markdown-preview-enhanced"><a href="#markdown-preview-enhanced" class="headerlink" title="markdown-preview-enhanced"></a>markdown-preview-enhanced</h3><p>One of the ‘BEST’ markdown preview extensions for Atom editor!<br><img src="https://cloud.githubusercontent.com/assets/1908863/22763072/32f09e80-ee28-11e6-9d42-c3953f5749a1.gif" alt="markdown-preview-enhanced"></p>
+<h3 id="regex-railroad-diagram"><a href="#regex-railroad-diagram" class="headerlink" title="regex-railroad-diagram"></a>regex-railroad-diagram</h3><p>Display railroad diagram of regex under cursor.<br><img src="https://i.github-camo.com/8466434b7e61870e51dbee19b0bc1173846e7a89/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6b6c6f72656e7a2f61746f6d2d72656765782d7261696c726f61642d6469616772616d732f333535323636373232386331393265383161306432653538343365383234633036346238653462392f72656765782d7261696c726f61642d6469616772616d732e706e67" alt="regex-railroad-diagram"></p>
+<h3 id="remote-sync"><a href="#remote-sync" class="headerlink" title="remote-sync"></a>remote-sync</h3><p>Upload your files to remote host after every change. Both SCP/SFTP and FTP are supported.</p>
+<h3 id="atom-hexo"><a href="#atom-hexo" class="headerlink" title="atom-hexo"></a>atom-hexo</h3><p>Hexo for the Atom Editor.</p>
+<h3 id="file-icons"><a href="#file-icons" class="headerlink" title="file-icons"></a>file-icons</h3><p>Assign file extension icons and colours for improved visual grepping<br><img src="https://i.github-camo.com/fb720dc73a9cf634fef9b11e87f0cd194284e3be/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f66696c652d69636f6e732f61746f6d2f363731343730366632363865323537313030653033633965623532383139636239376164353730622f707265766965772e706e67" alt="file-icons"></p>
+<h3 id="markdown-writer"><a href="#markdown-writer" class="headerlink" title="markdown-writer"></a>markdown-writer</h3><p>Make Atom a better Markdown editor and an easier static blogging tool.<br><img src="https://i.github-camo.com/216ebba971ab38d17d6eabdaf236d042a55b35b8/687474703a2f2f692e696d6775722e636f6d2f7339656b4d6e732e676966" alt="markdown-writer"></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;!-- toc orderedList:0 depthFrom:1 depthTo:6 --&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#系统环境&quot;&gt;系统环境&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#atom安装&quot;&gt;Atom安装&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#插件2017-02-23更新&quot;&gt;插件(2017-02-23更新)&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#tortoise-svn&quot;&gt;tortoise-svn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#simplified-chinese-menu&quot;&gt;simplified-chinese-menu&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#svn&quot;&gt;svn&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#minimap&quot;&gt;minimap&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#markdown-preview-enhanced&quot;&gt;markdown-preview-enhanced&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#regex-railroad-diagram&quot;&gt;regex-railroad-diagram&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#remote-sync&quot;&gt;remote-sync&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#atom-hexo&quot;&gt;atom-hexo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#file-icons&quot;&gt;file-icons&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#markdown-writer&quot;&gt;markdown-writer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- tocstop --&gt;
+&lt;p&gt;轻量IDE环境全面由Sublime Text2 转向Atom。&lt;br&gt;简单记录下Atom安装过程以及使用的插件。  &lt;/p&gt;
+&lt;h2 id=&quot;系统环境&quot;&gt;&lt;a href=&quot;#系统环境&quot; class=&quot;headerlink&quot; title=&quot;系统环境&quot;&gt;&lt;/a&gt;系统环境&lt;/h2&gt;&lt;p&gt;  Windows 7 x64&lt;/p&gt;
+&lt;h2 id=&quot;Atom安装&quot;&gt;&lt;a href=&quot;#Atom安装&quot; class=&quot;headerlink&quot; title=&quot;Atom安装&quot;&gt;&lt;/a&gt;Atom安装&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://atom.io&quot;&gt;Atom&lt;/a&gt;&lt;br&gt;&lt;img src=&quot;/images/2017/02/atom_install_1.png&quot; alt=&quot;Atom&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="Atom" scheme="http://xtimer.org/tags/Atom/"/>
+    
+      <category term="Plugin" scheme="http://xtimer.org/tags/Plugin/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://xtimer.org/2017/02/20/hello-world/"/>
+    <id>http://xtimer.org/2017/02/20/hello-world/</id>
+    <published>2017-02-20T07:21:33.056Z</published>
+    <updated>2017-02-20T07:21:33.056Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
