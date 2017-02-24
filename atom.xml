@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xtimer.org/"/>
-  <updated>2017-02-24T01:12:00.538Z</updated>
+  <updated>2017-02-24T05:43:16.983Z</updated>
   <id>http://xtimer.org/</id>
   
   <author>
@@ -14,6 +14,44 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>通过CloudFlare配置Github Pages HTTPS访问</title>
+    <link href="http://xtimer.org/2017/02/24/%E9%80%9A%E8%BF%87CloudFlare%E9%85%8D%E7%BD%AEGithub-Pages-HTTPS%E8%AE%BF%E9%97%AE/"/>
+    <id>http://xtimer.org/2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/</id>
+    <published>2017-02-24T05:13:45.000Z</published>
+    <updated>2017-02-24T05:43:16.983Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>本文假设已经配置好GitHub Pages,并且已经配置好Custom Domain</code><br>有关Github Pages的配置，请参考 <a href="https://pages.github.com/" target="_blank" rel="external">Github Pages</a>  </p>
+<h2 id="DNS设置"><a href="#DNS设置" class="headerlink" title="DNS设置"></a>DNS设置</h2><h3 id="将自定义域名的domain-name-servers-切换至CloudFlare"><a href="#将自定义域名的domain-name-servers-切换至CloudFlare" class="headerlink" title="将自定义域名的domain name servers 切换至CloudFlare."></a>将自定义域名的domain name servers 切换至CloudFlare.</h3><p><img src="https://support.cloudflare.com/hc/en-us/article_attachments/205348367/find-namesevers.png" alt="namserver"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">elle.ns.cloudflare.com</div><div class="line">rick.ns.cloudflare.com</div></pre></td></tr></table></figure></p>
+<p>自定义域名的相关DNS记录迁移到切换至CloudFlare.<br>一般情况下，几分钟后即能生效.<br><img src="https://support.cloudflare.com/hc/en-us/article_attachments/205331408/status-active.png" alt="dns"><br><a id="more"></a></p>
+<h2 id="SSL设置"><a href="#SSL设置" class="headerlink" title="SSL设置"></a>SSL设置</h2><h3 id="进入CloudFlare控制台-选择Crypto-菜单"><a href="#进入CloudFlare控制台-选择Crypto-菜单" class="headerlink" title="进入CloudFlare控制台, 选择Crypto 菜单"></a>进入CloudFlare控制台, 选择Crypto 菜单</h3><p>将SSL模式切换至Full<br><img src="https://blog.cloudflare.com/content/images/2016/06/T08btVu.png" alt="ssl"><br>此操作需要等待较长的时间，请耐心等待。<br>查看控制台状态，检查如果是Active Certificate，则是已经生效。</p>
+<h2 id="Page-Rule"><a href="#Page-Rule" class="headerlink" title="Page Rule"></a>Page Rule</h2><h3 id="设置Page-Rule，-强制http访问转至HTTPS访问"><a href="#设置Page-Rule，-强制http访问转至HTTPS访问" class="headerlink" title="设置Page Rule， 强制http访问转至HTTPS访问"></a>设置Page Rule， 强制http访问转至HTTPS访问</h3><p><img src="https://blog.cloudflare.com/content/images/2016/06/always_use_https_page_rule.png" alt="page"></p>
+<p>至此，通过CloudFlare 的SSL配置达到github pages的https访问支持。<br>例如: <a href="https://xtimer.org">xtimer.org</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;code&gt;本文假设已经配置好GitHub Pages,并且已经配置好Custom Domain&lt;/code&gt;&lt;br&gt;有关Github Pages的配置，请参考 &lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;  &lt;/p&gt;
+&lt;h2 id=&quot;DNS设置&quot;&gt;&lt;a href=&quot;#DNS设置&quot; class=&quot;headerlink&quot; title=&quot;DNS设置&quot;&gt;&lt;/a&gt;DNS设置&lt;/h2&gt;&lt;h3 id=&quot;将自定义域名的domain-name-servers-切换至CloudFlare&quot;&gt;&lt;a href=&quot;#将自定义域名的domain-name-servers-切换至CloudFlare&quot; class=&quot;headerlink&quot; title=&quot;将自定义域名的domain name servers 切换至CloudFlare.&quot;&gt;&lt;/a&gt;将自定义域名的domain name servers 切换至CloudFlare.&lt;/h3&gt;&lt;p&gt;&lt;img src=&quot;https://support.cloudflare.com/hc/en-us/article_attachments/205348367/find-namesevers.png&quot; alt=&quot;namserver&quot;&gt;&lt;br&gt;&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;elle.ns.cloudflare.com&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;rick.ns.cloudflare.com&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;自定义域名的相关DNS记录迁移到切换至CloudFlare.&lt;br&gt;一般情况下，几分钟后即能生效.&lt;br&gt;&lt;img src=&quot;https://support.cloudflare.com/hc/en-us/article_attachments/205331408/status-active.png&quot; alt=&quot;dns&quot;&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="website" scheme="http://xtimer.org/categories/website/"/>
+    
+    
+      <category term="Github" scheme="http://xtimer.org/tags/Github/"/>
+    
+      <category term="Pages" scheme="http://xtimer.org/tags/Pages/"/>
+    
+      <category term="HTTPS" scheme="http://xtimer.org/tags/HTTPS/"/>
+    
+      <category term="SSL" scheme="http://xtimer.org/tags/SSL/"/>
+    
+      <category term="CloudFlare" scheme="http://xtimer.org/tags/CloudFlare/"/>
+    
+  </entry>
   
   <entry>
     <title>Atom And Plugins</title>

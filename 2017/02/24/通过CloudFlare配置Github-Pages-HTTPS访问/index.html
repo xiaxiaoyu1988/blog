@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Atom,Plugin," />
+  <meta name="keywords" content="Github,Pages,HTTPS,SSL,CloudFlare," />
 
 
 
@@ -89,66 +89,27 @@
 
 
 
-<meta name="description" content="系统环境
-Atom安装
-插件(2017-02-24更新)
-autocomplete-python
-tortoise-svn
-simplified-chinese-menu
-svn
-minimap
-markdown-preview-enhanced
-regex-railroad-diagram
-remote-sync
-atom-hexo
-file-icons
-markdown-writer">
+<meta name="description" content="本文假设已经配置好GitHub Pages,并且已经配置好Custom Domain有关Github Pages的配置，请参考 Github Pages  
+DNS设置将自定义域名的domain name servers 切换至CloudFlare.12elle.ns.cloudflare.comrick.ns.cloudflare.com
+自定义域名的相关DNS记录迁移到切换至CloudFlar">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Atom And Plugins">
-<meta property="og:url" content="http://xtimer.org/2017/02/22/Atom-and-plugins/index.html">
+<meta property="og:title" content="通过CloudFlare配置Github Pages HTTPS访问">
+<meta property="og:url" content="http://xtimer.org/2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/index.html">
 <meta property="og:site_name" content="Xtimer">
-<meta property="og:description" content="系统环境
-Atom安装
-插件(2017-02-24更新)
-autocomplete-python
-tortoise-svn
-simplified-chinese-menu
-svn
-minimap
-markdown-preview-enhanced
-regex-railroad-diagram
-remote-sync
-atom-hexo
-file-icons
-markdown-writer">
-<meta property="og:image" content="http://xtimer.org/images/2017/02/atom_install_1.png">
-<meta property="og:image" content="http://xtimer.org/images/2017/02/atom_install_2.png">
-<meta property="og:image" content="https://i.github-camo.com/9cb3e21999f92079ca5393b718784f81be458afa/68747470733a2f2f636c6f75642e67697468756275736572636f6e74656e742e636f6d2f6173736574732f3139333836342f31323238383432372f36316665323131342d626130662d313165352d393833322d3938383639313830643837662e676966">
-<meta property="og:image" content="http://xtimer.org/images/2017/02/atom_plugin_1.png">
-<meta property="og:image" content="https://i.github-camo.com/310974644fa82b356fd6a84fac26e4629743bcc8/68747470733a2f2f6769746875622e636f6d2f6368696e616b6964732f61746f6d2d6368696e6573652d6d656e752f7261772f6d61737465722f73637265656e73686f742f73637265656e73686f74342e706e67">
-<meta property="og:image" content="https://i.github-camo.com/c26ef0defaf081ebd5ddfd730a1d914e9dfa3a3a/68747470733a2f2f6769746875622e636f6d2f61746f6d2d6d696e696d61702f6d696e696d61702f626c6f622f6d61737465722f7265736f75726365732f696e646570656e64656e742d7363726f6c6c2e6769663f7261773d74727565">
-<meta property="og:image" content="https://cloud.githubusercontent.com/assets/1908863/22763072/32f09e80-ee28-11e6-9d42-c3953f5749a1.gif">
-<meta property="og:image" content="https://i.github-camo.com/8466434b7e61870e51dbee19b0bc1173846e7a89/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6b6c6f72656e7a2f61746f6d2d72656765782d7261696c726f61642d6469616772616d732f333535323636373232386331393265383161306432653538343365383234633036346238653462392f72656765782d7261696c726f61642d6469616772616d732e706e67">
-<meta property="og:image" content="https://i.github-camo.com/fb720dc73a9cf634fef9b11e87f0cd194284e3be/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f66696c652d69636f6e732f61746f6d2f363731343730366632363865323537313030653033633965623532383139636239376164353730622f707265766965772e706e67">
-<meta property="og:image" content="https://i.github-camo.com/216ebba971ab38d17d6eabdaf236d042a55b35b8/687474703a2f2f692e696d6775722e636f6d2f7339656b4d6e732e676966">
-<meta property="og:updated_time" content="2017-02-24T01:12:00.538Z">
+<meta property="og:description" content="本文假设已经配置好GitHub Pages,并且已经配置好Custom Domain有关Github Pages的配置，请参考 Github Pages  
+DNS设置将自定义域名的domain name servers 切换至CloudFlare.12elle.ns.cloudflare.comrick.ns.cloudflare.com
+自定义域名的相关DNS记录迁移到切换至CloudFlar">
+<meta property="og:image" content="https://support.cloudflare.com/hc/en-us/article_attachments/205348367/find-namesevers.png">
+<meta property="og:image" content="https://support.cloudflare.com/hc/en-us/article_attachments/205331408/status-active.png">
+<meta property="og:image" content="https://blog.cloudflare.com/content/images/2016/06/T08btVu.png">
+<meta property="og:image" content="https://blog.cloudflare.com/content/images/2016/06/always_use_https_page_rule.png">
+<meta property="og:updated_time" content="2017-02-24T05:43:16.983Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Atom And Plugins">
-<meta name="twitter:description" content="系统环境
-Atom安装
-插件(2017-02-24更新)
-autocomplete-python
-tortoise-svn
-simplified-chinese-menu
-svn
-minimap
-markdown-preview-enhanced
-regex-railroad-diagram
-remote-sync
-atom-hexo
-file-icons
-markdown-writer">
-<meta name="twitter:image" content="http://xtimer.org/images/2017/02/atom_install_1.png">
+<meta name="twitter:title" content="通过CloudFlare配置Github Pages HTTPS访问">
+<meta name="twitter:description" content="本文假设已经配置好GitHub Pages,并且已经配置好Custom Domain有关Github Pages的配置，请参考 Github Pages  
+DNS设置将自定义域名的domain name servers 切换至CloudFlare.12elle.ns.cloudflare.comrick.ns.cloudflare.com
+自定义域名的相关DNS记录迁移到切换至CloudFlar">
+<meta name="twitter:image" content="https://support.cloudflare.com/hc/en-us/article_attachments/205348367/find-namesevers.png">
 
 
 
@@ -176,13 +137,13 @@ markdown-writer">
 
 
 
-  <link rel="canonical" href="http://xtimer.org/2017/02/22/Atom-and-plugins/"/>
+  <link rel="canonical" href="http://xtimer.org/2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/"/>
 
 
 
 
 
-  <title> Atom And Plugins | Xtimer </title>
+  <title> 通过CloudFlare配置Github Pages HTTPS访问 | Xtimer </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -341,7 +302,7 @@ markdown-writer">
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-  <link itemprop="mainEntityOfPage" href="http://xtimer.org/2017/02/22/Atom-and-plugins/">
+  <link itemprop="mainEntityOfPage" href="http://xtimer.org/2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/">
 
   <span style="display:none" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="name" content="Xiaxiaoyu">
@@ -365,7 +326,7 @@ markdown-writer">
             
             
               
-                Atom And Plugins
+                通过CloudFlare配置Github Pages HTTPS访问
               
             
           </h1>
@@ -380,8 +341,8 @@ markdown-writer">
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-22T11:35:14+08:00">
-                2017-02-22
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-24T13:13:45+08:00">
+                2017-02-24
               </time>
             
 
@@ -391,6 +352,28 @@ markdown-writer">
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/website/" itemprop="url" rel="index">
+                    <span itemprop="name">website</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -399,8 +382,8 @@ markdown-writer">
                 <span class="post-meta-item-icon">
                   <i class="fa fa-comment-o"></i>
                 </span>
-                <a href="/2017/02/22/Atom-and-plugins/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/22/Atom-and-plugins/" itemprop="commentCount"></span>
+                <a href="/2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -426,40 +409,12 @@ markdown-writer">
       
 
       
-        <!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
-<ul>
-<li><a href="#系统环境">系统环境</a></li>
-<li><a href="#atom安装">Atom安装</a></li>
-<li><a href="#插件2017-02-24更新">插件(2017-02-24更新)</a><ul>
-<li><a href="#autocomplete-python">autocomplete-python</a></li>
-<li><a href="#tortoise-svn">tortoise-svn</a></li>
-<li><a href="#simplified-chinese-menu">simplified-chinese-menu</a></li>
-<li><a href="#svn">svn</a></li>
-<li><a href="#minimap">minimap</a></li>
-<li><a href="#markdown-preview-enhanced">markdown-preview-enhanced</a></li>
-<li><a href="#regex-railroad-diagram">regex-railroad-diagram</a></li>
-<li><a href="#remote-sync">remote-sync</a></li>
-<li><a href="#atom-hexo">atom-hexo</a></li>
-<li><a href="#file-icons">file-icons</a></li>
-<li><a href="#markdown-writer">markdown-writer</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-<p>轻量IDE环境全面由Sublime Text2 转向Atom。<br>简单记录下Atom安装过程以及使用的插件。  </p>
-<h2 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境"></a>系统环境</h2><p>  Windows 7 x64</p>
-<h2 id="Atom安装"><a href="#Atom安装" class="headerlink" title="Atom安装"></a>Atom安装</h2><p><a href="https://atom.io" target="_blank" rel="external">Atom</a><br><img src="/images/2017/02/atom_install_1.png" alt="Atom"><br><a id="more"></a><br>选择<code>Other platforms</code><br><img src="/images/2017/02/atom_install_2.png" alt="Atom"><br>选择windows x64平台下的zip包<br>解压到任意目录，打开atom.exe 即可使用</p>
-<h2 id="插件-2017-02-24更新"><a href="#插件-2017-02-24更新" class="headerlink" title="插件(2017-02-24更新)"></a>插件(2017-02-24更新)</h2><h3 id="autocomplete-python"><a href="#autocomplete-python" class="headerlink" title="autocomplete-python"></a>autocomplete-python</h3><p>Python completions for packages, variables, methods, functions, with their arguments. Powered by your choice of Jedi or Kite.<br><img src="https://i.github-camo.com/9cb3e21999f92079ca5393b718784f81be458afa/68747470733a2f2f636c6f75642e67697468756275736572636f6e74656e742e636f6d2f6173736574732f3139333836342f31323238383432372f36316665323131342d626130662d313165352d393833322d3938383639313830643837662e676966" alt="python"></p>
-<h3 id="tortoise-svn"><a href="#tortoise-svn" class="headerlink" title="tortoise-svn"></a>tortoise-svn</h3><p>An Atom Plugin for users of TortoiseSvn for Windows<br><img src="/images/2017/02/atom_plugin_1.png" alt="tsvn"></p>
-<h3 id="simplified-chinese-menu"><a href="#simplified-chinese-menu" class="headerlink" title="simplified-chinese-menu"></a>simplified-chinese-menu</h3><p>Atom 的简体中文语言包，完整汉化，兼容所有已发布版本 Atom<br><img src="https://i.github-camo.com/310974644fa82b356fd6a84fac26e4629743bcc8/68747470733a2f2f6769746875622e636f6d2f6368696e616b6964732f61746f6d2d6368696e6573652d6d656e752f7261772f6d61737465722f73637265656e73686f742f73637265656e73686f74342e706e67" alt="simplified-chinese-menu"></p>
-<h3 id="svn"><a href="#svn" class="headerlink" title="svn"></a>svn</h3><p>Marks lines/files in the editor gutter/treeview that have been added, edited, or deleted since the last commit.</p>
-<h3 id="minimap"><a href="#minimap" class="headerlink" title="minimap"></a>minimap</h3><p>A preview of the full source code.<br><img src="https://i.github-camo.com/c26ef0defaf081ebd5ddfd730a1d914e9dfa3a3a/68747470733a2f2f6769746875622e636f6d2f61746f6d2d6d696e696d61702f6d696e696d61702f626c6f622f6d61737465722f7265736f75726365732f696e646570656e64656e742d7363726f6c6c2e6769663f7261773d74727565" alt="minimap"></p>
-<h3 id="markdown-preview-enhanced"><a href="#markdown-preview-enhanced" class="headerlink" title="markdown-preview-enhanced"></a>markdown-preview-enhanced</h3><p>One of the ‘BEST’ markdown preview extensions for Atom editor!<br><img src="https://cloud.githubusercontent.com/assets/1908863/22763072/32f09e80-ee28-11e6-9d42-c3953f5749a1.gif" alt="markdown-preview-enhanced"></p>
-<h3 id="regex-railroad-diagram"><a href="#regex-railroad-diagram" class="headerlink" title="regex-railroad-diagram"></a>regex-railroad-diagram</h3><p>Display railroad diagram of regex under cursor.<br><img src="https://i.github-camo.com/8466434b7e61870e51dbee19b0bc1173846e7a89/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f6b6c6f72656e7a2f61746f6d2d72656765782d7261696c726f61642d6469616772616d732f333535323636373232386331393265383161306432653538343365383234633036346238653462392f72656765782d7261696c726f61642d6469616772616d732e706e67" alt="regex-railroad-diagram"></p>
-<h3 id="remote-sync"><a href="#remote-sync" class="headerlink" title="remote-sync"></a>remote-sync</h3><p>Upload your files to remote host after every change. Both SCP/SFTP and FTP are supported.</p>
-<h3 id="atom-hexo"><a href="#atom-hexo" class="headerlink" title="atom-hexo"></a>atom-hexo</h3><p>Hexo for the Atom Editor.</p>
-<h3 id="file-icons"><a href="#file-icons" class="headerlink" title="file-icons"></a>file-icons</h3><p>Assign file extension icons and colours for improved visual grepping<br><img src="https://i.github-camo.com/fb720dc73a9cf634fef9b11e87f0cd194284e3be/68747470733a2f2f7261772e67697468756275736572636f6e74656e742e636f6d2f66696c652d69636f6e732f61746f6d2f363731343730366632363865323537313030653033633965623532383139636239376164353730622f707265766965772e706e67" alt="file-icons"></p>
-<h3 id="markdown-writer"><a href="#markdown-writer" class="headerlink" title="markdown-writer"></a>markdown-writer</h3><p>Make Atom a better Markdown editor and an easier static blogging tool.<br><img src="https://i.github-camo.com/216ebba971ab38d17d6eabdaf236d042a55b35b8/687474703a2f2f692e696d6775722e636f6d2f7339656b4d6e732e676966" alt="markdown-writer"></p>
+        <p><code>本文假设已经配置好GitHub Pages,并且已经配置好Custom Domain</code><br>有关Github Pages的配置，请参考 <a href="https://pages.github.com/" target="_blank" rel="external">Github Pages</a>  </p>
+<h2 id="DNS设置"><a href="#DNS设置" class="headerlink" title="DNS设置"></a>DNS设置</h2><h3 id="将自定义域名的domain-name-servers-切换至CloudFlare"><a href="#将自定义域名的domain-name-servers-切换至CloudFlare" class="headerlink" title="将自定义域名的domain name servers 切换至CloudFlare."></a>将自定义域名的domain name servers 切换至CloudFlare.</h3><p><img src="https://support.cloudflare.com/hc/en-us/article_attachments/205348367/find-namesevers.png" alt="namserver"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">elle.ns.cloudflare.com</div><div class="line">rick.ns.cloudflare.com</div></pre></td></tr></table></figure></p>
+<p>自定义域名的相关DNS记录迁移到切换至CloudFlare.<br>一般情况下，几分钟后即能生效.<br><img src="https://support.cloudflare.com/hc/en-us/article_attachments/205331408/status-active.png" alt="dns"><br><a id="more"></a></p>
+<h2 id="SSL设置"><a href="#SSL设置" class="headerlink" title="SSL设置"></a>SSL设置</h2><h3 id="进入CloudFlare控制台-选择Crypto-菜单"><a href="#进入CloudFlare控制台-选择Crypto-菜单" class="headerlink" title="进入CloudFlare控制台, 选择Crypto 菜单"></a>进入CloudFlare控制台, 选择Crypto 菜单</h3><p>将SSL模式切换至Full<br><img src="https://blog.cloudflare.com/content/images/2016/06/T08btVu.png" alt="ssl"><br>此操作需要等待较长的时间，请耐心等待。<br>查看控制台状态，检查如果是Active Certificate，则是已经生效。</p>
+<h2 id="Page-Rule"><a href="#Page-Rule" class="headerlink" title="Page Rule"></a>Page Rule</h2><h3 id="设置Page-Rule，-强制http访问转至HTTPS访问"><a href="#设置Page-Rule，-强制http访问转至HTTPS访问" class="headerlink" title="设置Page Rule， 强制http访问转至HTTPS访问"></a>设置Page Rule， 强制http访问转至HTTPS访问</h3><p><img src="https://blog.cloudflare.com/content/images/2016/06/always_use_https_page_rule.png" alt="page"></p>
+<p>至此，通过CloudFlare 的SSL配置达到github pages的https访问支持。<br>例如: <a href="https://xtimer.org">xtimer.org</a></p>
 
       
     </div>
@@ -499,9 +454,15 @@ markdown-writer">
       
         <div class="post-tags">
           
-            <a href="/tags/Atom/" rel="tag"># Atom</a>
+            <a href="/tags/Github/" rel="tag"># Github</a>
           
-            <a href="/tags/Plugin/" rel="tag"># Plugin</a>
+            <a href="/tags/Pages/" rel="tag"># Pages</a>
+          
+            <a href="/tags/HTTPS/" rel="tag"># HTTPS</a>
+          
+            <a href="/tags/SSL/" rel="tag"># SSL</a>
+          
+            <a href="/tags/CloudFlare/" rel="tag"># CloudFlare</a>
           
         </div>
       
@@ -514,8 +475,8 @@ markdown-writer">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/02/20/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
+              <a href="/2017/02/22/Atom-and-plugins/" rel="next" title="Atom And Plugins">
+                <i class="fa fa-chevron-left"></i> Atom And Plugins
               </a>
             
           </div>
@@ -523,10 +484,6 @@ markdown-writer">
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/" rel="prev" title="通过CloudFlare配置Github Pages HTTPS访问">
-                通过CloudFlare配置Github Pages HTTPS访问 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -541,10 +498,10 @@ markdown-writer">
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2017/02/22/Atom-and-plugins/"
-     data-title="Atom And Plugins"
+        <div class="ds-share flat" data-thread-key="2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/"
+     data-title="通过CloudFlare配置Github Pages HTTPS访问"
      data-content=""
-     data-url="http://xtimer.org/2017/02/22/Atom-and-plugins/">
+     data-url="http://xtimer.org/2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/">
   <div class="ds-share-inline">
     <ul  class="ds-share-icons-16">
 
@@ -574,8 +531,8 @@ markdown-writer">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2017/02/22/Atom-and-plugins/"
-           data-title="Atom And Plugins" data-url="http://xtimer.org/2017/02/22/Atom-and-plugins/">
+      <div class="ds-thread" data-thread-key="2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/"
+           data-title="通过CloudFlare配置Github Pages HTTPS访问" data-url="http://xtimer.org/2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/">
       </div>
     
   </div>
@@ -695,7 +652,7 @@ markdown-writer">
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#系统环境"><span class="nav-number">1.</span> <span class="nav-text">系统环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Atom安装"><span class="nav-number">2.</span> <span class="nav-text">Atom安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#插件-2017-02-24更新"><span class="nav-number">3.</span> <span class="nav-text">插件(2017-02-24更新)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#autocomplete-python"><span class="nav-number">3.1.</span> <span class="nav-text">autocomplete-python</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#tortoise-svn"><span class="nav-number">3.2.</span> <span class="nav-text">tortoise-svn</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#simplified-chinese-menu"><span class="nav-number">3.3.</span> <span class="nav-text">simplified-chinese-menu</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#svn"><span class="nav-number">3.4.</span> <span class="nav-text">svn</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#minimap"><span class="nav-number">3.5.</span> <span class="nav-text">minimap</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#markdown-preview-enhanced"><span class="nav-number">3.6.</span> <span class="nav-text">markdown-preview-enhanced</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#regex-railroad-diagram"><span class="nav-number">3.7.</span> <span class="nav-text">regex-railroad-diagram</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#remote-sync"><span class="nav-number">3.8.</span> <span class="nav-text">remote-sync</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#atom-hexo"><span class="nav-number">3.9.</span> <span class="nav-text">atom-hexo</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#file-icons"><span class="nav-number">3.10.</span> <span class="nav-text">file-icons</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#markdown-writer"><span class="nav-number">3.11.</span> <span class="nav-text">markdown-writer</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#DNS设置"><span class="nav-number">1.</span> <span class="nav-text">DNS设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#将自定义域名的domain-name-servers-切换至CloudFlare"><span class="nav-number">1.1.</span> <span class="nav-text">将自定义域名的domain name servers 切换至CloudFlare.</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SSL设置"><span class="nav-number">2.</span> <span class="nav-text">SSL设置</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#进入CloudFlare控制台-选择Crypto-菜单"><span class="nav-number">2.1.</span> <span class="nav-text">进入CloudFlare控制台, 选择Crypto 菜单</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Page-Rule"><span class="nav-number">3.</span> <span class="nav-text">Page Rule</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#设置Page-Rule，-强制http访问转至HTTPS访问"><span class="nav-number">3.1.</span> <span class="nav-text">设置Page Rule， 强制http访问转至HTTPS访问</span></a></li></ol></li></ol></div>
             
 
           </div>
