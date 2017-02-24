@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xtimer.org/"/>
-  <updated>2017-02-23T09:05:04.317Z</updated>
+  <updated>2017-02-24T01:12:00.538Z</updated>
   <id>http://xtimer.org/</id>
   
   <author>
@@ -20,13 +20,14 @@
     <link href="http://xtimer.org/2017/02/22/Atom-and-plugins/"/>
     <id>http://xtimer.org/2017/02/22/Atom-and-plugins/</id>
     <published>2017-02-22T03:35:14.000Z</published>
-    <updated>2017-02-23T09:05:04.317Z</updated>
+    <updated>2017-02-24T01:12:00.538Z</updated>
     
     <content type="html"><![CDATA[<!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
 <ul>
 <li><a href="#系统环境">系统环境</a></li>
 <li><a href="#atom安装">Atom安装</a></li>
-<li><a href="#插件2017-02-23更新">插件(2017-02-23更新)</a><ul>
+<li><a href="#插件2017-02-24更新">插件(2017-02-24更新)</a><ul>
+<li><a href="#autocomplete-python">autocomplete-python</a></li>
 <li><a href="#tortoise-svn">tortoise-svn</a></li>
 <li><a href="#simplified-chinese-menu">simplified-chinese-menu</a></li>
 <li><a href="#svn">svn</a></li>
@@ -44,7 +45,8 @@
 <p>轻量IDE环境全面由Sublime Text2 转向Atom。<br>简单记录下Atom安装过程以及使用的插件。  </p>
 <h2 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境"></a>系统环境</h2><p>  Windows 7 x64</p>
 <h2 id="Atom安装"><a href="#Atom安装" class="headerlink" title="Atom安装"></a>Atom安装</h2><p><a href="https://atom.io" target="_blank" rel="external">Atom</a><br><img src="/images/2017/02/atom_install_1.png" alt="Atom"><br><a id="more"></a><br>选择<code>Other platforms</code><br><img src="/images/2017/02/atom_install_2.png" alt="Atom"><br>选择windows x64平台下的zip包<br>解压到任意目录，打开atom.exe 即可使用</p>
-<h2 id="插件-2017-02-23更新"><a href="#插件-2017-02-23更新" class="headerlink" title="插件(2017-02-23更新)"></a>插件(2017-02-23更新)</h2><h3 id="tortoise-svn"><a href="#tortoise-svn" class="headerlink" title="tortoise-svn"></a>tortoise-svn</h3><p>An Atom Plugin for users of TortoiseSvn for Windows<br><img src="/images/2017/02/atom_plugin_1.png" alt="tsvn"></p>
+<h2 id="插件-2017-02-24更新"><a href="#插件-2017-02-24更新" class="headerlink" title="插件(2017-02-24更新)"></a>插件(2017-02-24更新)</h2><h3 id="autocomplete-python"><a href="#autocomplete-python" class="headerlink" title="autocomplete-python"></a>autocomplete-python</h3><p>Python completions for packages, variables, methods, functions, with their arguments. Powered by your choice of Jedi or Kite.<br><img src="https://i.github-camo.com/9cb3e21999f92079ca5393b718784f81be458afa/68747470733a2f2f636c6f75642e67697468756275736572636f6e74656e742e636f6d2f6173736574732f3139333836342f31323238383432372f36316665323131342d626130662d313165352d393833322d3938383639313830643837662e676966" alt="python"></p>
+<h3 id="tortoise-svn"><a href="#tortoise-svn" class="headerlink" title="tortoise-svn"></a>tortoise-svn</h3><p>An Atom Plugin for users of TortoiseSvn for Windows<br><img src="/images/2017/02/atom_plugin_1.png" alt="tsvn"></p>
 <h3 id="simplified-chinese-menu"><a href="#simplified-chinese-menu" class="headerlink" title="simplified-chinese-menu"></a>simplified-chinese-menu</h3><p>Atom 的简体中文语言包，完整汉化，兼容所有已发布版本 Atom<br><img src="https://i.github-camo.com/310974644fa82b356fd6a84fac26e4629743bcc8/68747470733a2f2f6769746875622e636f6d2f6368696e616b6964732f61746f6d2d6368696e6573652d6d656e752f7261772f6d61737465722f73637265656e73686f742f73637265656e73686f74342e706e67" alt="simplified-chinese-menu"></p>
 <h3 id="svn"><a href="#svn" class="headerlink" title="svn"></a>svn</h3><p>Marks lines/files in the editor gutter/treeview that have been added, edited, or deleted since the last commit.</p>
 <h3 id="minimap"><a href="#minimap" class="headerlink" title="minimap"></a>minimap</h3><p>A preview of the full source code.<br><img src="https://i.github-camo.com/c26ef0defaf081ebd5ddfd730a1d914e9dfa3a3a/68747470733a2f2f6769746875622e636f6d2f61746f6d2d6d696e696d61702f6d696e696d61702f626c6f622f6d61737465722f7265736f75726365732f696e646570656e64656e742d7363726f6c6c2e6769663f7261773d74727565" alt="minimap"></p>
@@ -62,7 +64,8 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#系统环境&quot;&gt;系统环境&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#atom安装&quot;&gt;Atom安装&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;#插件2017-02-23更新&quot;&gt;插件(2017-02-23更新)&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#插件2017-02-24更新&quot;&gt;插件(2017-02-24更新)&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#autocomplete-python&quot;&gt;autocomplete-python&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#tortoise-svn&quot;&gt;tortoise-svn&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#simplified-chinese-menu&quot;&gt;simplified-chinese-menu&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#svn&quot;&gt;svn&lt;/a&gt;&lt;/li&gt;
