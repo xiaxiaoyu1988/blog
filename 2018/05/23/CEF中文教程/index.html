@@ -78,7 +78,7 @@
 <link href="/css/main.css?v=5.1.2" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Xtimer, Blog, Internet, C, Python, RPI, C++, JAVA" />
+  <meta name="keywords" content="CEF,Chrome,Blink," />
 
 
 
@@ -96,12 +96,76 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Xtimer">
-<meta property="og:url" content="http://xtimer.org/index.html">
+<meta name="description" content="CEF中文教程
+介绍
+开始
+加载自定义URL
+
+
+应用组件
+1分钟了解架构
+源码
+入口函数
+SimpleApp类
+SimpleHandler类
+编译步骤
+基于CMake的通用平台编译步骤
+
+
+
+
+
+本教程翻译自CEF官方文档
+CEF中文教程介绍本教程详细解释了，如何通过CEF3创建一个简单的应用程序。本教程中的示例程序引用的是CEF项目中的cefsimple示例程序。访问GeneralUsage">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CEF中文教程">
+<meta property="og:url" content="http://xtimer.org/2018/05/23/CEF中文教程/index.html">
 <meta property="og:site_name" content="Xtimer">
+<meta property="og:description" content="CEF中文教程
+介绍
+开始
+加载自定义URL
+
+
+应用组件
+1分钟了解架构
+源码
+入口函数
+SimpleApp类
+SimpleHandler类
+编译步骤
+基于CMake的通用平台编译步骤
+
+
+
+
+
+本教程翻译自CEF官方文档
+CEF中文教程介绍本教程详细解释了，如何通过CEF3创建一个简单的应用程序。本教程中的示例程序引用的是CEF项目中的cefsimple示例程序。访问GeneralUsage">
+<meta property="og:updated_time" content="2018-05-24T06:08:10.294Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Xtimer">
+<meta name="twitter:title" content="CEF中文教程">
+<meta name="twitter:description" content="CEF中文教程
+介绍
+开始
+加载自定义URL
+
+
+应用组件
+1分钟了解架构
+源码
+入口函数
+SimpleApp类
+SimpleHandler类
+编译步骤
+基于CMake的通用平台编译步骤
+
+
+
+
+
+本教程翻译自CEF官方文档
+CEF中文教程介绍本教程详细解释了，如何通过CEF3创建一个简单的应用程序。本教程中的示例程序引用的是CEF项目中的cefsimple示例程序。访问GeneralUsage">
 
 
 
@@ -130,13 +194,13 @@
 
 
 
-  <link rel="canonical" href="http://xtimer.org/"/>
+  <link rel="canonical" href="http://xtimer.org/2018/05/23/CEF中文教程/"/>
 
 
 
 
 
-  <title>Xtimer</title>
+  <title>CEF中文教程 | Xtimer</title>
   
 
 
@@ -171,9 +235,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -286,9 +348,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -318,9 +380,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/05/23/CEF中文教程/" itemprop="url">CEF中文教程</a></h1>
+          <h1 class="post-title" itemprop="name headline">CEF中文教程</h1>
         
 
         <div class="post-meta">
@@ -370,9 +430,7 @@
       
 
       
-        
-          
-            <ul>
+        <ul>
 <li><a href="#cef中文教程">CEF中文教程</a><ul>
 <li><a href="#介绍">介绍</a></li>
 <li><a href="#开始">开始</a><ul>
@@ -468,8 +526,6 @@ cefsimple.exe --url=file://c:/example/example.html
 <li>各个平台下稍有不同，编译问题大部分都是库不完整，编译工具链不完整，或者路径不正确，官网的源码本身没有问题，各个平台下都能编译通过。</li>
 </ul>
 
-          
-        
       
     </div>
     
@@ -484,436 +540,40 @@ cefsimple.exe --url=file://c:/example/example.html
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xtimer.org/2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xiaxiaoyu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xtimer">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/" itemprop="url">通过CloudFlare配置Github Pages HTTPS访问</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-24T13:13:45+08:00">
-                2017-02-24
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/website/" itemprop="url" rel="index">
-                    <span itemprop="name">website</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/CEF/" rel="tag"># CEF</a>
           
-
+            <a href="/tags/Chrome/" rel="tag"># Chrome</a>
           
-            
+            <a href="/tags/Blink/" rel="tag"># Blink</a>
           
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p><code>本文假设已经配置好GitHub Pages,并且已经配置好Custom Domain</code><br>有关Github Pages的配置，请参考 <a href="https://pages.github.com/">Github Pages</a>  </p>
-<h2 id="DNS设置"><a href="#DNS设置" class="headerlink" title="DNS设置"></a>DNS设置</h2><h3 id="将自定义域名的domain-name-servers-切换至CloudFlare"><a href="#将自定义域名的domain-name-servers-切换至CloudFlare" class="headerlink" title="将自定义域名的domain name servers 切换至CloudFlare."></a>将自定义域名的domain name servers 切换至CloudFlare.</h3><p><img src="https://support.cloudflare.com/hc/en-us/article_attachments/205348367/find-namesevers.png" alt="namserver"><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">elle.ns.cloudflare.com</div><div class="line">rick.ns.cloudflare.com</div></pre></td></tr></table></figure></p>
-<p>自定义域名的相关DNS记录迁移到切换至CloudFlare.<br>一般情况下，几分钟后即能生效.<br><img src="https://support.cloudflare.com/hc/en-us/article_attachments/205331408/status-active.png" alt="dns"><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/02/24/通过CloudFlare配置Github-Pages-HTTPS访问/" rel="next" title="通过CloudFlare配置Github Pages HTTPS访问">
+                <i class="fa fa-chevron-left"></i> 通过CloudFlare配置Github Pages HTTPS访问
+              </a>
+            
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
 
-    
+          <span class="post-nav-divider"></span>
 
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xtimer.org/2017/02/22/Atom-and-plugins/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xiaxiaoyu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xtimer">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/02/22/Atom-and-plugins/" itemprop="url">Atom And Plugins</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+          <div class="post-nav-prev post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-22T11:35:14+08:00">
-                2017-02-22
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <!-- toc orderedList:0 depthFrom:1 depthTo:6 -->
-<ul>
-<li><a href="#系统环境">系统环境</a></li>
-<li><a href="#atom安装">Atom安装</a></li>
-<li><a href="#插件2017-02-24更新">插件(2017-02-24更新)</a><ul>
-<li><a href="#autocomplete-python">autocomplete-python</a></li>
-<li><a href="#tortoise-svn">tortoise-svn</a></li>
-<li><a href="#simplified-chinese-menu">simplified-chinese-menu</a></li>
-<li><a href="#svn">svn</a></li>
-<li><a href="#minimap">minimap</a></li>
-<li><a href="#markdown-preview-enhanced">markdown-preview-enhanced</a></li>
-<li><a href="#regex-railroad-diagram">regex-railroad-diagram</a></li>
-<li><a href="#remote-sync">remote-sync</a></li>
-<li><a href="#atom-hexo">atom-hexo</a></li>
-<li><a href="#file-icons">file-icons</a></li>
-<li><a href="#markdown-writer">markdown-writer</a></li>
-</ul>
-</li>
-</ul>
-<!-- tocstop -->
-<p>轻量IDE环境全面由Sublime Text2 转向Atom。<br>简单记录下Atom安装过程以及使用的插件。  </p>
-<h2 id="系统环境"><a href="#系统环境" class="headerlink" title="系统环境"></a>系统环境</h2><p>  Windows 7 x64</p>
-<h2 id="Atom安装"><a href="#Atom安装" class="headerlink" title="Atom安装"></a>Atom安装</h2><p><a href="https://atom.io">Atom</a><br><img src="/images/2017/02/atom_install_1.png" alt="Atom"><br>
-          <!--noindex-->
-          <div class="post-button text-center">
-            <a class="btn" href="/2017/02/22/Atom-and-plugins/#more" rel="contents">
-              阅读全文 &raquo;
-            </a>
           </div>
-          <!--/noindex-->
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xtimer.org/2017/02/20/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Xiaxiaoyu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Xtimer">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2017/02/20/hello-world/" itemprop="url">Hello World</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-02-20T15:21:33+08:00">
-                2017-02-20
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -923,10 +583,11 @@ cefsimple.exe --url=file://c:/example/example.html
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -934,6 +595,12 @@ cefsimple.exe --url=file://c:/example/example.html
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="uyan_frame"></div>
+    
+  </div>
+
 
         </div>
         
@@ -954,8 +621,17 @@ cefsimple.exe --url=file://c:/example/example.html
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -1037,6 +713,22 @@ cefsimple.exe --url=file://c:/example/example.html
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#CEF中文教程"><span class="nav-number">1.</span> <span class="nav-text">CEF中文教程</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#介绍"><span class="nav-number">1.1.</span> <span class="nav-text">介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开始"><span class="nav-number">1.2.</span> <span class="nav-text">开始</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#加载自定义URL"><span class="nav-number">1.2.1.</span> <span class="nav-text">加载自定义URL</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#应用组件"><span class="nav-number">1.3.</span> <span class="nav-text">应用组件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1分钟了解架构"><span class="nav-number">1.4.</span> <span class="nav-text">1分钟了解架构</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#源码"><span class="nav-number">1.5.</span> <span class="nav-text">源码</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#入口函数"><span class="nav-number">1.6.</span> <span class="nav-text">入口函数</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SimpleApp类"><span class="nav-number">1.7.</span> <span class="nav-text">SimpleApp类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#SimpleHandler类"><span class="nav-number">1.8.</span> <span class="nav-text">SimpleHandler类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译步骤"><span class="nav-number">1.9.</span> <span class="nav-text">编译步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基于CMake的通用平台编译步骤"><span class="nav-number">1.9.1.</span> <span class="nav-text">基于CMake的通用平台编译步骤</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -1157,10 +849,10 @@ cefsimple.exe --url=file://c:/example/example.html
 
 
   
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.2"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.2"></script>
 
-  
+
 
   
 
@@ -1186,6 +878,10 @@ cefsimple.exe --url=file://c:/example/example.html
   
     
 
+    
+      <!-- UY BEGIN -->
+      <script type="text/javascript" src="/js/uyan.js?uid=2127954"></script>
+      <!-- UY END -->
     
   
 
