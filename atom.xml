@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xtimer.org/"/>
-  <updated>2018-05-24T06:08:10.294Z</updated>
+  <updated>2018-05-24T06:22:42.779Z</updated>
   <id>http://xtimer.org/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://xtimer.org/2018/05/23/CEF%E4%B8%AD%E6%96%87%E6%95%99%E7%A8%8B/"/>
     <id>http://xtimer.org/2018/05/23/CEF中文教程/</id>
     <published>2018-05-23T03:35:14.000Z</published>
-    <updated>2018-05-24T06:08:10.294Z</updated>
+    <updated>2018-05-24T06:22:42.779Z</updated>
     
     <content type="html"><![CDATA[<ul>
 <li><a href="#cef中文教程">CEF中文教程</a><ul>
@@ -45,11 +45,11 @@
 <p>本教程翻译自<a href="https://bitbucket.org/chromiumembedded/cef/wiki/Tutorial" target="_blank" rel="external">CEF官方文档</a></p>
 <h1 id="CEF中文教程"><a href="#CEF中文教程" class="headerlink" title="CEF中文教程"></a>CEF中文教程</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>本教程详细解释了，如何通过CEF3创建一个简单的应用程序。本教程中的示例程序引用的是CEF项目中的<a href="https://bitbucket.org/chromiumembedded/cef/src/master/tests/cefsimple/?at=master" target="_blank" rel="external">cefsimple示例程序</a>。访问<a href="https://bitbucket.org/chromiumembedded/cef/wiki/GeneralUsage.md" target="_blank" rel="external">GeneralUsage</a>可以获取更多有关CEF的信息。</p>
 <h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>CEF提供了一个非常易于开始的示例程序, 可以访问<a href="https://bitbucket.org/chromiumembedded/cef-project" target="_blank" rel="external">cef-project</a>查阅相关文档。本教程中使用的示例程序以及CEF3程序来自于CEF项目的主线分支，可能与发布版本略有不同。</p>
-<h3 id="加载自定义URL"><a href="#加载自定义URL" class="headerlink" title="加载自定义URL"></a>加载自定义URL</h3><p>cefsimple程序默认加载的网址是 google.com, 可以通过命令行指定参数的方式加载不同的URL。<br>`</p>
-<pre><code># Load the local file “c:\example\example.html”
-cefsimple.exe --url=file://c:/example/example.html
-</code></pre><p><code>&lt;!-- More --&gt;
-也可以直接修改cefsimple程序源码来加载指定的URL，源码位置在[cefsimple/simple_app.cc](https://bitbucket.org/chromiumembedded/cef/src/master/tests/cefsimple/simple_app.cc?at=master)</code><br>    // Load the local file “c:\example\example.html”<br>    …<br>    if (url.empty())<br>        url = “file://c:/example/example.html”;<br>    …<br>`  </p>
+<h3 id="加载自定义URL"><a href="#加载自定义URL" class="headerlink" title="加载自定义URL"></a>加载自定义URL</h3><p>cefsimple程序默认加载的网址是 google.com, 可以通过命令行指定参数的方式加载不同的URL。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Load the local file “c:\example\example.html”</div><div class="line">cefsimple.exe --url=file://c:/example/example.html</div></pre></td></tr></table></figure>
+<a id="more"></a>  
+<p>也可以直接修改cefsimple程序源码来加载指定的URL，源码位置在<a href="https://bitbucket.org/chromiumembedded/cef/src/master/tests/cefsimple/simple_app.cc?at=master" target="_blank" rel="external">cefsimple/simple_app.cc</a>  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// Load the local file “c:\example\example.html”</div><div class="line">…</div><div class="line">if (url.empty())</div><div class="line">    url = &quot;file://c:/example/example.html&quot;;</div><div class="line">…</div></pre></td></tr></table></figure>
 <h2 id="应用组件"><a href="#应用组件" class="headerlink" title="应用组件"></a>应用组件</h2><p>所有的CEF程序拥有以下几个主要的组件：  </p>
 <ul>
 <li>CEF动态链接库(Windows下是libcef.dll, Linux是 libcef.so, OS X是Chromium Embedded Framework.framework)</li>
@@ -125,7 +125,27 @@ cefsimple.exe --url=file://c:/example/example.html
 &lt;li&gt;&lt;a href=&quot;#cef中文教程&quot;&gt;CEF中文教程&lt;/a&gt;&lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;#介绍&quot;&gt;介绍&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;#开始&quot;&gt;开始&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;#加载自定义url&quot;&gt;加载自定义URL&lt;/a&gt;&lt;
+&lt;li&gt;&lt;a href=&quot;#加载自定义url&quot;&gt;加载自定义URL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#应用组件&quot;&gt;应用组件&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#1分钟了解架构&quot;&gt;1分钟了解架构&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#源码&quot;&gt;源码&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#入口函数&quot;&gt;入口函数&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#simpleapp类&quot;&gt;SimpleApp类&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#simplehandler类&quot;&gt;SimpleHandler类&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#编译步骤&quot;&gt;编译步骤&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#基于cmake的通用平台编译步骤&quot;&gt;基于CMake的通用平台编译步骤&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本教程翻译自&lt;a href=&quot;https://bitbucket.org/chromiumembedded/cef/wiki/Tutorial&quot;&gt;CEF官方文档&lt;/a&gt;&lt;/p&gt;
+&lt;h1 id=&quot;CEF中文教程&quot;&gt;&lt;a href=&quot;#CEF中文教程&quot; class=&quot;headerlink&quot; title=&quot;CEF中文教程&quot;&gt;&lt;/a&gt;CEF中文教程&lt;/h1&gt;&lt;h2 id=&quot;介绍&quot;&gt;&lt;a href=&quot;#介绍&quot; class=&quot;headerlink&quot; title=&quot;介绍&quot;&gt;&lt;/a&gt;介绍&lt;/h2&gt;&lt;p&gt;本教程详细解释了，如何通过CEF3创建一个简单的应用程序。本教程中的示例程序引用的是CEF项目中的&lt;a href=&quot;https://bitbucket.org/chromiumembedded/cef/src/master/tests/cefsimple/?at=master&quot;&gt;cefsimple示例程序&lt;/a&gt;。访问&lt;a href=&quot;https://bitbucket.org/chromiumembedded/cef/wiki/GeneralUsage.md&quot;&gt;GeneralUsage&lt;/a&gt;可以获取更多有关CEF的信息。&lt;/p&gt;
+&lt;h2 id=&quot;开始&quot;&gt;&lt;a href=&quot;#开始&quot; class=&quot;headerlink&quot; title=&quot;开始&quot;&gt;&lt;/a&gt;开始&lt;/h2&gt;&lt;p&gt;CEF提供了一个非常易于开始的示例程序, 可以访问&lt;a href=&quot;https://bitbucket.org/chromiumembedded/cef-project&quot;&gt;cef-project&lt;/a&gt;查阅相关文档。本教程中使用的示例程序以及CEF3程序来自于CEF项目的主线分支，可能与发布版本略有不同。&lt;/p&gt;
+&lt;h3 id=&quot;加载自定义URL&quot;&gt;&lt;a href=&quot;#加载自定义URL&quot; class=&quot;headerlink&quot; title=&quot;加载自定义URL&quot;&gt;&lt;/a&gt;加载自定义URL&lt;/h3&gt;&lt;p&gt;cefsimple程序默认加载的网址是 google.com, 可以通过命令行指定参数的方式加载不同的URL。  &lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;# Load the local file “c:\example\example.html”&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;cefsimple.exe --url=file://c:/example/example.html&lt;/div&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
     
     </summary>
     

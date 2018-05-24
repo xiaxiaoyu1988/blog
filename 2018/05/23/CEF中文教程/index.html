@@ -142,7 +142,7 @@ SimpleHandler类
 
 本教程翻译自CEF官方文档
 CEF中文教程介绍本教程详细解释了，如何通过CEF3创建一个简单的应用程序。本教程中的示例程序引用的是CEF项目中的cefsimple示例程序。访问GeneralUsage">
-<meta property="og:updated_time" content="2018-05-24T06:08:10.294Z">
+<meta property="og:updated_time" content="2018-05-24T06:22:42.779Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CEF中文教程">
 <meta name="twitter:description" content="CEF中文教程
@@ -453,11 +453,11 @@ CEF中文教程介绍本教程详细解释了，如何通过CEF3创建一个简�
 <p>本教程翻译自<a href="https://bitbucket.org/chromiumembedded/cef/wiki/Tutorial" target="_blank" rel="external">CEF官方文档</a></p>
 <h1 id="CEF中文教程"><a href="#CEF中文教程" class="headerlink" title="CEF中文教程"></a>CEF中文教程</h1><h2 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h2><p>本教程详细解释了，如何通过CEF3创建一个简单的应用程序。本教程中的示例程序引用的是CEF项目中的<a href="https://bitbucket.org/chromiumembedded/cef/src/master/tests/cefsimple/?at=master" target="_blank" rel="external">cefsimple示例程序</a>。访问<a href="https://bitbucket.org/chromiumembedded/cef/wiki/GeneralUsage.md" target="_blank" rel="external">GeneralUsage</a>可以获取更多有关CEF的信息。</p>
 <h2 id="开始"><a href="#开始" class="headerlink" title="开始"></a>开始</h2><p>CEF提供了一个非常易于开始的示例程序, 可以访问<a href="https://bitbucket.org/chromiumembedded/cef-project" target="_blank" rel="external">cef-project</a>查阅相关文档。本教程中使用的示例程序以及CEF3程序来自于CEF项目的主线分支，可能与发布版本略有不同。</p>
-<h3 id="加载自定义URL"><a href="#加载自定义URL" class="headerlink" title="加载自定义URL"></a>加载自定义URL</h3><p>cefsimple程序默认加载的网址是 google.com, 可以通过命令行指定参数的方式加载不同的URL。<br>`</p>
-<pre><code># Load the local file “c:\example\example.html”
-cefsimple.exe --url=file://c:/example/example.html
-</code></pre><p><code>&lt;!-- More --&gt;
-也可以直接修改cefsimple程序源码来加载指定的URL，源码位置在[cefsimple/simple_app.cc](https://bitbucket.org/chromiumembedded/cef/src/master/tests/cefsimple/simple_app.cc?at=master)</code><br>    // Load the local file “c:\example\example.html”<br>    …<br>    if (url.empty())<br>        url = “file://c:/example/example.html”;<br>    …<br>`  </p>
+<h3 id="加载自定义URL"><a href="#加载自定义URL" class="headerlink" title="加载自定义URL"></a>加载自定义URL</h3><p>cefsimple程序默认加载的网址是 google.com, 可以通过命令行指定参数的方式加载不同的URL。  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line"># Load the local file “c:\example\example.html”</div><div class="line">cefsimple.exe --url=file://c:/example/example.html</div></pre></td></tr></table></figure>
+<a id="more"></a>  
+<p>也可以直接修改cefsimple程序源码来加载指定的URL，源码位置在<a href="https://bitbucket.org/chromiumembedded/cef/src/master/tests/cefsimple/simple_app.cc?at=master" target="_blank" rel="external">cefsimple/simple_app.cc</a>  </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">// Load the local file “c:\example\example.html”</div><div class="line">…</div><div class="line">if (url.empty())</div><div class="line">    url = &quot;file://c:/example/example.html&quot;;</div><div class="line">…</div></pre></td></tr></table></figure>
 <h2 id="应用组件"><a href="#应用组件" class="headerlink" title="应用组件"></a>应用组件</h2><p>所有的CEF程序拥有以下几个主要的组件：  </p>
 <ul>
 <li>CEF动态链接库(Windows下是libcef.dll, Linux是 libcef.so, OS X是Chromium Embedded Framework.framework)</li>
